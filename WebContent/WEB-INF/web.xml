@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>sc</display-name>
+  <welcome-file-list>
+    <welcome-file>login.html</welcome-file>
+    <welcome-file>login.html</welcome-file>
+    <welcome-file>login.jsp</welcome-file>
+
+  </welcome-file-list>
+
+
+  //管理员登入
+<servlet>
+<servlet-name>LoginServlet</servlet-name>
+<servlet-class>servlet.LoginServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>LoginServlet</servlet-name>
+<url-pattern>/admin_login</url-pattern>
+</servlet-mapping>
+
+  //学生登入
+<servlet>
+<servlet-name>StudentLoginServlet</servlet-name>
+<servlet-class>servlet.StudentLoginServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>StudentLoginServlet</servlet-name>
+<url-pattern>/Student_login</url-pattern>
+</servlet-mapping>
+  
+    <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>servlet.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AddStudentServlet</servlet-name>
+    <servlet-class>servlet.AddStudentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddStudentServlet</servlet-name>
+    <url-pattern>/AddStudentServlet</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>DeleteStudentServlet</servlet-name>
+    <servlet-class>servlet.DeleteStudentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteStudentServlet</servlet-name>
+    <url-pattern>/DeleteStudentServlet</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+    <servlet-name>SelectStudentServlet</servlet-name>
+    <servlet-class>servlet.SelectStudentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SelectStudentServlet</servlet-name>
+    <url-pattern>/SelectStudentServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>ShowStudentServlet</servlet-name>
+    <servlet-class>servlet.ShowStudentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowStudentServlet</servlet-name>
+    <url-pattern>/ShowStudentServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
